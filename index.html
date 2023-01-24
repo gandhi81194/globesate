@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" type="text/css" href="./slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick-theme.css" />
+    
+
+    <style type="text/css">
+     @font-face {
+                font-family: 'Open Sans';
+                src: url('./fonts/OpenSans-Regular.eot');
+                src: url('./fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+                    url('./fonts/OpenSans-Regular.woff2') format('woff2'),
+                    url('./fonts/OpenSans-Regular.woff') format('woff'),
+                    url('./fonts/OpenSans-Regular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+    }
+
+
+
+       
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins';
+            text-transform: capitalize;
+            /* border: 1px solid black; */
+        }
+
+        .search {
+            display: none;
+        }
+
+        .searchbtn {
+
+            cursor: pointer;
+            width: 15px;
+        }
+        .bottom{
+            border-bottom: 1px solid rgba(128, 128, 128, 0.696);
+        }
+
+        
+
+        img {
+            width: 100%;
+        }
+
+
+
+        a {
+            margin: 12px;
+        }
+        .box1-p{
+           
+            font-size: 16px;
+            margin-top: 40%;
+            margin-right: 17%;
+        }
+        .box1-p-1{
+            font-size: 60px;
+            position: absolute;
+            bottom: 10px;
+            width: 322px;
+            left: 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: white;
+            line-height: 45px;
+        }
+
+        .box1 {
+            background-image: url(./box1/bgimg.png);
+
+
+        }
+        .box2-p-1{
+            font-size: 18px;
+            text-align: center;
+            margin:7% 5% 2% 5%;
+        }
+        
+        .box2-caption-1{
+            position: absolute;
+             bottom: -10px;
+             background-color: white;
+             width: 85%;
+             border-radius: 15px;
+             left: 0px;
+             padding: 20px;
+        }
+        .box2-caption-1-h{
+            font-size: 24px;
+        }
+        .box3-circle{
+            width: 60px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: rgba(128, 128, 128, 0.869);
+            text-align: center;
+            margin: 10px;
+            padding-top: 1px;
+            font-weight: bold;
+        }
+        .footer-text{
+            font-size: 18px;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        .footer-a{
+            text-transform: uppercase;
+            border-right: 1px solid;
+            padding: 0px 15px;
+            text-decoration: none;
+            color: inherit;
+        }
+         @media screen and (max-width:992px) {
+            .box1-p{
+            margin: 5% 0%;
+           text-align: justify;
+           }
+           .box1-p-1{
+            font-size: 60px;
+            
+            bottom: 32%;
+        }
+        .box2-p-1{
+            font-size: 18px;
+            text-align: justify;
+            margin:5% 0%;
+        }
+
+         }
+         @media screen and (max-width:768px) {
+            
+           .box1-p-1{
+            font-size: 40px;
+            line-height: 31px;
+            bottom: 40%;
+        }
+        .box3-blog{
+            margin: 5% 0%;
+        }
+        .box2-caption-1-h{
+            font-size: 18px;
+        }
+
+         }
+         @media screen and (max-width:485px) {
+            .box1-p-1{
+            font-size: 30px;
+            line-height: 21px;
+            bottom: 60%;
+        }
+        .box2-caption-1-h{
+            font-size: 13px;
+        }
+            
+           
+ 
+          }
+           
+           
+       
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg  container " style="font-size: 12px;>
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"><img src="./box1/Globe SAT.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin-left: 40%;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">our courage</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">suport</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" style="margin-right: 5%;">
+                    <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    <img class="searchbtn" src="./box1/magnifying-glass (1).png" alt="">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- box1 -->
+    <div class="container-fluid box1 bgimg bottom" style="padding: 5% 0%;">
+        <div class="container">
+            <div class="row " style="position: relative;">
+                <div class="col-lg-8 slide" id="slider">
+                    <div>
+                        <div><img src="./box1/slider1.png"></div>
+                    </div>
+                    <div>
+                        <div><img src="./box1/slider2.png"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 slide" >
+                    <p class="box1-p" >
+                        The maritime industry demands
+                        seamless connectivity across the
+                        world’s oceans. The sector needs
+                        highly reliable telephony and data
+                        services to meet the increasingly
+                        complex requirements of maritime
+                        operators as well as the network
+                        expectations of cruise passengers.
+                    </p>
+                    <i class="bi bi-arrow-left" style="color: black;background-color: white;"></i>
+                    <i class="bi bi-arrow-right"></i>
+
+                </div>
+                <p class="box1-p-1">
+                    Mobility your maritime partner </p>
+
+
+            </div>
+        </div>
+    </div>
+    <!--box2-->
+    <div class="container-fluid bottom" >
+        <div class="container">
+            <div class="row ">
+                <div class="col-12">
+                    <p class="box2-p-1">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h4 style="font-size: 20px;color: #01a9ea;text-align: center;">Discover More<i
+                            class="bi bi-caret-right-fill"></i></h4>
+                </div>
+            </div>
+            <div class="row " style="margin-bottom: 10%;margin-top: 5%;">
+                <div class=" col-lg-6 " style="position: relative; margin-bottom: 5%;">
+                    <img src="./box2/Rounded Rectangle 16.png" alt="">
+                    <div class="box2-caption-1">
+                        <h4 class="box2-caption-1-h">SES Pioneers Cloud-Based Network
+                            Automation and Service Orchestration</h4>
+                        <h4 style="font-size: 13px;color: #01a9ea;text-align:end;">Discover More<i
+                                class="bi bi-caret-right-fill"></i></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 "  >
+                    <div class="row " style="margin: 1%;">
+                        <div class="col-12 " style="position: relative;margin-bottom: 10px;">
+                            <img src="./box2/2.png" alt="" width="100%" >
+                            <div class="box2-caption-1">
+                                <h4 class="box2-caption-1-h">On-demand entertainment no longer
+                                    a dream thanks to satellite</h4>
+                                <h4 style="font-size: 13px;color: #01a9ea;text-align:end;">Discover More<i
+                                        class="bi bi-caret-right-fill"></i></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 1%;">
+                        <div class="col-12" style="position: relative;">
+                            <img src="./box2/3.png" alt="">
+                            <div class="box2-caption-1">
+                                <h4 class="box2-caption-1-h">Four things you need to know
+                                    about 8K</h4>
+                                <h4 style="font-size: 13px;color: #01a9ea;text-align:end;">Discover More
+                                    <i class="bi bi-caret-right-fill"></i>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- box3 blogs -->
+    <div class="container-fluid" style="margin-bottom: 5%;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 style="text-align: center;font-size: 24px;margin-top: 5%;">Blog</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 box3-blog" >
+                    
+                    <div>
+                        <img src="./box3/1.png" alt="">
+                    </div>
+                    <div>
+                        <div style="display: flex;">
+
+                            <div class="box3-circle">
+                                1
+                            </div>
+
+                            <div style="font-size: 16px;margin-top: 10px ;">
+                                <p><b>
+
+                                        SES Pioneers Cloud-Based
+                                        Network Automation and
+                                        Service Orchestration</b>
+                                </p>
+                            </div>
+                        </div>
+                        <h4 style="font-size: 13px;color: #01a9ea;text-align: center;">Discover More<i
+                                class="bi bi-caret-right-fill"></i></h4>
+
+
+                    </div>
+                </div>
+                <div class="col-md-3 box3-blog">
+                    <div>
+                        <img src="./box3/2.png" alt="">
+                    </div>
+                    <div>
+                        <div style="display: flex;">
+
+                            <div class="box3-circle">
+                                2
+                            </div>
+
+                            <div style="font-size: 16px;margin-top: 10px ;">
+                                <p><b>
+
+                                        SES Pioneers Cloud-Based
+                                        Network Automation and
+                                        Service Orchestration</b>
+                                </p>
+                            </div>
+                        </div>
+                        <h4 style="font-size: 13px;color: #01a9ea;text-align: center;">Discover More<i
+                                class="bi bi-caret-right-fill"></i></h4>
+
+
+                    </div>
+                </div>
+                <div class="col-md-3 box3-blog">
+                    <div>
+                        <img src="./box3/3.png" alt="">
+                    </div>
+                    <div>
+                        <div style="display: flex;">
+
+                            <div class="box3-circle">
+                                3
+                            </div>
+
+                            <div style="font-size: 16px;margin-top: 10px ;">
+                                <p><b>
+
+                                        SES Pioneers Cloud-Based
+                                        Network Automation and
+                                        Service Orchestration</b>
+                                </p>
+                            </div>
+                        </div>
+                        <h4 style="font-size: 13px;color: #01a9ea;text-align: center;">Discover More<i
+                                class="bi bi-caret-right-fill"></i></h4>
+
+
+                    </div>
+                </div>
+                <div class="col-md-3 box3-blog">
+                    <div  class="blog-slider">
+                        <div>
+                            <img src="./box3/4.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./box3/5.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex;">
+
+                            <div class="box3-circle">
+                                4
+                            </div>
+
+                            <div style="font-size: 16px;margin-top: 10px ;">
+                                <p><b>
+
+                                        SES Pioneers Cloud-Based
+                                        Network Automation and
+                                        Service Orchestration</b>
+                                </p>
+                            </div>
+                        </div>
+                        <h4 style="font-size: 13px;color: #01a9ea;text-align: center;">Discover More<i
+                                class="bi bi-caret-right-fill"></i></h4>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid" style="background-color: black;">
+        <div class="row footer-text justify-content-center text-center">
+            <div class="col-lg-3">
+                <!-- <div style="font-size: 18px;color: white;display: flex;
+                justify-content: center;margin: 10px;"> -->
+                    <div><p>© 2019 All rights reserved.</p></div>
+                   
+                <!-- </div> -->
+            </div>
+            <div class="col-lg-6">
+                <div>
+                    <a class="footer-a">home</a>
+                    <a class="footer-a">about us</a>
+                    <a class="footer-a">our courage</a>
+                    <a style="text-transform: uppercase;padding: 0px 15px;">contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./jquery-3.6.3.min.js"></script>
+
+    <script src="./slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<script>
+    $(document).ready(function () {
+        $('#slider').slick({
+            //   dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            prevArrow: $('.bi-arrow-left'),
+            nextArrow: $('.bi-arrow-right'),
+            autoplay:true
+        });
+
+    });
+    $(document).ready(function () {
+        $('.blog-slider').slick({
+            //   dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay:true
+           
+        });
+
+    });
+</script>
+
+</html>
